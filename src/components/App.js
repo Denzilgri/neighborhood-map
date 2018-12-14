@@ -98,9 +98,6 @@ class App extends Component {
     // Get the map container element
     const mapEl = document.getElementById('map');
 
-    // setting the map container height
-    mapEl.style.height = window.innerHeight + "px";
-
     // Instatiating google map instance and initializing it
     const map = new window.google.maps.Map(mapEl, {
       center: { lat: 12.972442, lng: 77.580643 },
@@ -201,7 +198,7 @@ class App extends Component {
             const address = '<b>Address: </b>' + (venue.location.formattedAddress.join(', ')) + '<br>';
             const verified = '<b>Verified Location: </b>' + (venue.verified ? 'Yes' : 'No') + '<br>';
             const readMore = '<a href="https://foursquare.com/v/' + venue.id
-              + '" target="_blank">Read More on Foursquare</a>'
+              + '" alt="Link to info on Foursquare" target="_blank">Read More on Foursquare</a>'
             self.state.infowindow.setContent(address + verified + readMore);
           });
         }

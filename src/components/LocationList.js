@@ -60,16 +60,16 @@ class LocationList extends Component {
     render() {
         return (
             <div className="search">
-                <input role="search" aria-labelledby="filter" id="search-field" className="search-field" type="text" placeholder="Filter"
+                <input role="search" aria-labelledby="filter" id="search-field" className="search-field-box" type="text" placeholder="Filter Suggestions"
                     value={this.state.query} onChange={this.filterLocations} />
-                <ul>
+                <ul tabIndex="-1">
                     {this.state.suggestions && (this.state.locations.map(function (listItem, index) {
                         return (
                             <Location key={index} id={index} openInfoWindow={this.props.openInfoWindow.bind(this)} data={listItem}
                             />)
                     }, this))}
                 </ul>
-                <button className="button" onClick={this.toggleSuggestions}>Show/Hide Suggestions</button>
+                <button className="button" onClick={this.toggleSuggestions}>Toggle Suggestions</button>
             </div>
         );
     }

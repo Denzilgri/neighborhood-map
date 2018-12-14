@@ -1,4 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Neighborhood Map Project
+
+# Table of Contents
+
+* [Overview](#overview)
+* [How to run it?](#how-to-run-it?)
+* [Dependencies](#dependencies)
+* [Available Scripts](#available-scripts)
+* [Learn More](#learn-more)
+
+## Overview
+
+This app is a neighborhood site checker which helps you view the map of the city Bengaluru, India and provides suggestions of places to visit. The app consists of a map with markers of suggestions and a search field to search a suggested field.
+
+## How to run it?
+To get started developing right away:
+
+* Make sure node and npm are installed.
+* install all project dependencies with `npm install`
+* start the development server with `npm start`
+
+## Dependencies
+
+This project uses the react framework library and its depencies. Please do an 'npm install' to download those dependencies. The app will only start once the command 'npm start' is used in the command line(cmd in windows, terminal in linux and osx). The project is compatible on all browsers.
+
+It also uses google maps API (https://developers.google.com/maps/documentation/javascript/tutorial)
 
 ## Available Scripts
 
@@ -39,6 +64,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 To learn React, check out the [React documentation](https://reactjs.org/).
